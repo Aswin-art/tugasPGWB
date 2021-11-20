@@ -3,6 +3,7 @@
 @section('content')
 <div class="bagian-tambah" style="padding-left: 40px;">
   <form action="{{ route('products.create') }}" method="post">
+    @csrf
     <button class="btn btn-flat btn-primary">Tambah</button>
   </form>
 </div>
